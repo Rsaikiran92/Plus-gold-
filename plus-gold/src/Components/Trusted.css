@@ -1,0 +1,76 @@
+.belief-section {
+    width: 100%;
+}
+
+.belief-wrapper {
+    min-width: 88%;
+    max-width: 88%;
+    margin: 4rem auto 2rem;
+}
+
+.belief-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Arial, sans-serif !important;
+    letter-spacing: 0.56px;
+    color: #2b2b2b;
+    text-align: center;
+    margin: 0;
+}
+
+.belief-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Arial, sans-serif !important;
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.jewellers-wrapper {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.jewellers-wrapper img {
+    width: 100%;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1400px) {
+    .belief-wrapper {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .belief-wrapper {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .belief-wrapper {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .belief-wrapper {
+        max-width: 720px;
+    }
+    .belief-heading {
+        font-size: 44px;
+    }
+    .belief-subheading {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .belief-wrapper {
+        max-width: 540px;
+    }
+}
+

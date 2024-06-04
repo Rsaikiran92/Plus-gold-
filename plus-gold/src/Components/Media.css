@@ -1,0 +1,127 @@
+.media-section {
+    width: 100%;
+  
+    .media-container {
+      min-width: 73%;
+      max-width: 73%;
+      margin: 2rem auto 4rem;
+  
+      .media-heading-gr {
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-family: "Helvetica Neue", Arial, sans-serif !important;
+        letter-spacing: 0.56px;
+        color: #2b2b2b;
+        text-align: center;
+        margin: 0;
+      }
+  
+      .media-sub-heading-gr {
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: "Helvetica Neue", Arial, sans-serif !important;
+        letter-spacing: 1px;
+        color: #2b2b2b;
+        text-align: center;
+        margin-top: 0.75rem;
+      }
+  
+      .media-cards-container {
+          display: flex;
+          padding: 2.5rem;
+          margin-top: 3rem;
+          justify-content: space-around;
+          align-items: center;
+    
+          .each-media-card-div {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 3);
+    
+            .each-media-card {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 0 1rem;
+    
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+    }
+  
+    @media (max-width: 1400px) {
+      .media-container {
+        max-width: 1320px;
+      }
+    }
+  
+    @media (max-width: 1200px) {
+      .media-container {
+        max-width: 1140px;
+      }
+    }
+  
+    @media (max-width: 1100px) {
+      .media-container {
+        .media-cards-container {
+          overflow-x: scroll;
+          .each-media-card-div {
+            min-width: 100%;
+            .each-media-card {
+              img {
+                width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 992px) {
+      .media-container {
+        max-width: 960px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .media-container {
+        max-width: 720px;
+        overflow: hidden;
+  
+        .media-heading-gr {
+          font-size: 44px;
+        }
+        .media-sub-heading-gr {
+          font-size: 22px;
+        }
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .media-container {
+        max-width: 540px;
+      }
+    }
+  
+    @media (max-width: 450px) {
+      padding: 0 0.5rem;
+      .media-container {
+        .media-cards-container {
+          padding: 0;
+        }
+      }
+    }
+  
+    @media (max-width: 410px) {
+      .media-container {
+        .media-cards-container {
+          gap: 2rem;
+        }
+      }
+    }
+  }
+  
